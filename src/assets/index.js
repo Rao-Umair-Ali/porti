@@ -33,8 +33,10 @@ import Project3 from "./web3chat.png";
 import Project4 from "./HHCMed.png";
 import project5 from "./wow.png";
 import Project6 from "./chatbot.png";
+import Project10 from "./thirdJob.png";
 
 export {
+  Project10,
   Project3,
   Project6,
   logo,

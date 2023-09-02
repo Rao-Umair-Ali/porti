@@ -24,6 +24,7 @@ import {
   project2,
   Project3,
   Project4,
+  Project10,
   Project6,
   project5,
 } from "../assets";
@@ -208,7 +209,31 @@ const testimonials = [
   },
 ];
 
-const projects = [
+const projects = [{
+  name: "ThirJob.",
+  description:
+    "A Freelanceplatform powered by Blockchain with instant payment and record on blockchain.",
+  tags: [
+    {
+      name: "React",
+      color: "blue-text-gradient",
+    },
+    {
+      name: "Ether Js",
+      color: "green-text-gradient",
+    },
+    {
+      name: "Solidity",
+      color: "pink-text-gradient",
+    },
+    {
+      name: "cloud mongodb",
+      color: "blue-text-gradient",
+    },
+  ],
+  image: Project10,
+  source_code_link: "https://github.com/RaoSahab14127",
+},
   {
     name: "Web3 Uber",
     description: `A Decentrilize car rental Application.`,
