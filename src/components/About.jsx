@@ -5,7 +5,7 @@ import { services } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import { Tilt } from "react-tilt";
 import { SectionWrapper } from "../hoc";
-import { github } from "../assets";
+import {  github, linkedin } from "../assets";
 
 const ServiceCard = ({ index, title, icon }) => {
   return (
@@ -43,23 +43,18 @@ const About = () => {
         variants={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px]  max-w-3xl leading-[30px]"
       >
-        My name is Rao Hammad Ali, and I am pursuing a degree in Software
-        Engineering from UBIT, University of Karachi. As I near the completion
-        of my graduation, I am excited to showcase my skills as a blockchain
-        developer. I have earned a certification in blockchain technology from
-        Jawan Pakistan, solidifying my expertise in this field. In addition, I
-        am adept at frontend development, with a keen passion for creating
-        captivating user interfaces for websites. With a strong focus on
-        building and developing decentralized applications, I consistently
-        strive for excellence. I take pride in my ability to work effectively as
-        a team member while also possessing valuable leadership qualities. This
-        introduction highlights my diverse skill set and showcases my dedication
-        to delivering high-quality work.
+       Hi, I am Umair Ali, a passionate Flutter developer  with a strong interest in building modern, user-friendly, and scalable applications. I enjoy transforming ideas into functional digital products, combining clean code with creative design.
+
+With a background in Dart, Flutter, Java, HTML, CSS, and JavaScript, I specialize in crafting smooth mobile and web experiences. I have also worked on projects like E-commerce apps, University Management Systems, and Firebase-integrated apps, which helped me gain hands-on experience in real-world problem solving.
+
+Beyond coding, I am constantly learning about AI, data science, and fullstack development to grow into a versatile developer. My goal is to create impactful solutions that not only look good but also solve meaningful problems.
+
+When Im not coding, you will find me exploring new tech trends, improving my design skills, or working on personal growth
       </motion.p>
       <div className="mt-12 flex flex-row">
         <button className="bg-[#915eff] py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary cursor-pointer hover:cursor-pointer">
           <a
-            href="https://github.com/RaoSahab14127"
+            href="https://github.com/Rao-Umair-Ali"
             className="flex flex-row"
             target="_black"
           >
@@ -69,11 +64,11 @@ const About = () => {
         </button>
         <button className="bg-white py-3 px-8 rounded-xl outline-none w-fit text-[#915eff] font-bold shadow-md shadow-primary cursor-pointer hover:cursor-pointer ml-5">
           <a
-            href="https://www.linkedin.com/in/rao-hammad-ali-558496214/"
+            href="https://www.linkedin.com/in/rao-umair-ali-52943b247/"
             className="flex flex-row"
             target="_black"
           >
-            LinkedIn
+            LinkedIn<img src={linkedin} alt="source code" className="w-5 h-5 ml-1" />
           </a>
         </button>
       </div>

@@ -5,17 +5,19 @@ import {
   web,
   javascript,
   typescript,
+  flutter,
   html,
   css,
   reactjs,
   redux,
+  frontend,
   tailwind,
   nodejs,
   mongodb,
   git,
   figma,
   threejs,
-  teciz,
+  whiterapps,
   technyx,
   solidity,
   hardhat,
@@ -27,6 +29,9 @@ import {
   Project10,
   Project6,
   project5,
+  cornwall,
+  dart,
+  mysql,
 } from "../assets";
 
 export const navLinks = [
@@ -46,25 +51,27 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Full Stack Blockchain Developer",
-    icon: web,
+    title: "Flutter Developer",
+    icon: flutter,
   },
   {
-    title: "Smart Contract Developer",
-    icon: mobile,
+    title: "Frontend Developer",
+    icon: frontend,
   },
-  {
-    title: "Mern Stack Developer",
-    icon: backend,
-  },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
+
 ];
 
 const technologies = [
   {
+    name: "Flutter",
+    icon: flutter,
+  }, {
+    name: "Dart",
+    icon: dart,
+  }, {
+    name: "Mysql",
+    icon: mysql,
+  }, {
     name: "HTML 5",
     icon: html,
   },
@@ -77,41 +84,14 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
-  {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Tailwind CSS",
-    icon: tailwind,
-  },
+
+
   {
     name: "Node JS",
     icon: nodejs,
-  },
-  {
-    name: "Solidity",
-    icon: solidity,
-  },
-  // {
-  //   name: "Hardhat",
-  //   icon: hardhat,
-  // },
-  {
-    name: "Ethereum",
-    icon: eth,
-  },
-
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
@@ -125,11 +105,11 @@ const technologies = [
 
 const experiences = [
   {
-    title: "Software Engineer",
-    company_name: "US based health care company Human Health Care",
-    icon: teciz,
+    title: "Flutter intern",
+    company_name: "Indian product based company",
+    icon: whiterapps,
     iconBg: "#383E56",
-    date: "March 2023 - Present",
+    date: "March 2025 - june 2025",
     points: [
       "Developing and maintaining web applications for their pharmacy using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -139,9 +119,9 @@ const experiences = [
     ],
   },
   {
-    title: "Blockchain Developer Intern",
-    company_name: "Japan based InfoTech Company NFTstudio24",
-    icon: technyx,
+    title: "Website maintenance",
+    company_name: "cornwall Islamic Foundation",
+    icon: cornwall,
     iconBg: "#E6DEDD",
     date: "Dec 2022 - Feb 2023",
     points: [
@@ -185,7 +165,7 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Hammad proved me wrong.",
+      "I thought it was impossible to make a website as beautiful as our product, but Umair proved me wrong.",
     name: "Sara Lee",
     designation: "CFO",
     company: "Acme Co",
@@ -232,7 +212,7 @@ const projects = [{
     },
   ],
   image: Project10,
-  source_code_link: "https://github.com/RaoSahab14127",
+  source_code_link: "https://github.com/Rao-Umair-Ali",
 },
   {
     name: "Web3 Uber",

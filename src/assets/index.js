@@ -1,11 +1,20 @@
-import logo from "./logo.svg";
+import logo from "./umairpic.jpeg";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
+import flutter from "./flutter.png";
+import frontend from "./frontend.png";
 import github from "./github.png";
+import linkedin from "./linkedin.png";
+
 import menu from "./menu.svg";
 import close from "./close.svg";
+import cornwall from "./cornwall.png";
+import whiterapps from "./whiterapps.png";
+import dart from "./dart.png";
+import firebase from "./firebase.png";
+import mysql from "./mysql.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -37,8 +46,15 @@ import Project10 from "./thirdJob.png";
 
 export {
   Project10,
+  cornwall,
+  mysql,
+  dart,firebase,
+  linkedin,
+  whiterapps,
   Project3,
   Project6,
+  flutter,
+  frontend,
   logo,
   hardhat,
   eth,

@@ -14,64 +14,58 @@ const Contact = () => {
     email: "",
     message: "",
   });
+
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
     setForm({ ...form, [name]: value });
   };
+
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // 1xPcaIQxqDOLqcUmD
-    // template_qaovi8k
-    // service_ff8qdkl
     emailjs
       .send(
-        "service_ff8qdkl",
-        "template_qaovi8k",
+        "service_6cj7jm5", // your service ID
+        "template_7t0nzhj", // your template ID
         {
           from_name: form.name,
-          to_name: "Rao Hammad Ali",
-          from_email: form.email,
-          to_email: "eb20103109.raohammadali@gmail.com",
+          to_name: "Rao Umair Ali",
+          reply_to: form.email,
           message: form.message,
         },
-        "1xPcaIQxqDOLqcUmD"
+        "7e8caMcBdvy16oz78" // your public key
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thankyou. I will get back to you as soon as possible.");
-          setForm({
-            name: "",
-            email: "",
-            message: "",
-          });
+          alert("Thank you. I will get back to you as soon as possible.");
+          setForm({ name: "", email: "", message: "" });
         },
         (error) => {
-          setLoading(false);
-          console.log(error);
-          alert("Something went wrong");
-        }
+  setLoading(false);
+  console.error("EmailJS Error:", error);
+  alert("Something went wrong: " + JSON.stringify(error));
+}
+
       );
   };
+
   return (
     <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
+      {/* Form Section */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={`${styles.sectionSubText}`}>Get in touch</p>
         <h3 className={`${styles.sectionHeadText}`}>Contact.</h3>
-        <form
-          action=""
-          ref={formRef}
-          onSubmit={handleSubmit}
-          className="mt-12 flex flex-col gap-8"
-        >
-          <label htmlFor="" className="flex flex-col">
+
+        <form ref={formRef} onSubmit={handleSubmit} className="mt-12 flex flex-col gap-8">
+          {/* Name */}
+          <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
               type="text"
@@ -79,10 +73,12 @@ const Contact = () => {
               value={form.name}
               onChange={handleChange}
               placeholder="What's your name?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label htmlFor="" className="flex flex-col">
+
+          {/* Email */}
+          <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Email</span>
             <input
               type="email"
@@ -90,10 +86,12 @@ const Contact = () => {
               value={form.email}
               onChange={handleChange}
               placeholder="What's your email?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
-          <label htmlFor="" className="flex flex-col">
+
+          {/* Message */}
+          <label className="flex flex-col">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
               rows="7"
@@ -101,7 +99,7 @@ const Contact = () => {
               value={form.message}
               onChange={handleChange}
               placeholder="What do you want to say?"
-              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outlined-none border-none font-medium"
+              className="bg-tertiary py-4 px-6 placeholder:text-secondary text-white rounded-lg outline-none border-none font-medium"
             />
           </label>
 
@@ -114,6 +112,7 @@ const Contact = () => {
         </form>
       </motion.div>
 
+      {/* Earth Canvas */}
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
