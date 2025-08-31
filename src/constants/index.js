@@ -32,6 +32,9 @@ import {
   cornwall,
   dart,
   mysql,
+  cornwallp,
+  desiApp,
+  kinect,
 } from "../assets";
 
 export const navLinks = [
@@ -111,28 +114,35 @@ const experiences = [
     iconBg: "#383E56",
     date: "March 2025 - june 2025",
     points: [
-      "Developing and maintaining web applications for their pharmacy using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Working with Woocommerce Restfull APIs.",
-      "An AI based Image and LAb detection model that can sort file to thier respective folder.",
-      "An Excel Automation to send whatsapp message directly from one click."
+     " Developed using Flutter & Firebase:",
+"Built a cross-platform mobile app with Flutter for the frontend (UI/UX).",
+"Used Firebase backend services for scalability and security.",
+"Core Features Implemented:",
+"User Authentication → Integrated Firebase Authentication for secure login/sign-up.",
+"Firestore Database → Designed and connected a real-time NoSQL database for dynamic data storage and retrieval.",
+"State Management → Ensured smooth real-time updates in the UI using state management techniques.",
+"Collaboration & Process:",
+"Worked in an Agile environment, participating in sprints and stand-ups.",
+"Fixed bugs & optimized performance for better user experience.",
+"Implemented new features across both frontend (UI) and backend (database & auth).",
     ],
   },
   {
-    title: "Website maintenance",
-    company_name: "cornwall Islamic Foundation",
-    icon: cornwall,
-    iconBg: "#E6DEDD",
-    date: "Dec 2022 - Feb 2023",
-    points: [
-      "Creating BlockChain Name Service (BNS) and writing smart contracts for decentralized web applications.",
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with with web with help of EtherJs and Meta Mask.",
-      "On purchasing Domain an NFT is Generated based on their Domain and transfer to their Wallet.",
-      "Implementing responsive design.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-
-    ],
+    title: "Website Maintenance",
+company_name: "Cornwall Islamic Foundation",
+icon: cornwall,
+iconBg: "#E6DEDD",
+date: "Dec 2022 - Feb 2023",
+points: [
+  "Developed and maintained the official website using Next.js and React.",
+  "Integrated Sanity CMS for dynamic content management.",
+  "Configured and deployed the website on Vercel with custom domain setup.",
+  "Implemented authentication with Google and other providers using NextAuth.",
+  "Debugged and resolved 500/504 server errors and deployment issues.",
+  "Created responsive UI components and popup dialogs for announcements.",
+  "Ensured SEO optimization and analytics integration (Google Analytics / Pixel).",
+  "Collaborated with the team to provide technical support and updates.",
+],
   },
   // {
   //   title: "Web Developer",
@@ -189,175 +199,79 @@ const testimonials = [
   },
 ];
 
-const projects = [{
-  name: "ThirJob.",
-  description:
-    "A Freelanceplatform powered by Blockchain with instant payment and record on blockchain.",
-  tags: [
-    {
-      name: "React",
-      color: "blue-text-gradient",
-    },
-    {
-      name: "Ether Js",
-      color: "green-text-gradient",
-    },
-    {
-      name: "Solidity",
-      color: "pink-text-gradient",
-    },
-    {
-      name: "cloud mongodb",
-      color: "blue-text-gradient",
-    },
-  ],
-  image: Project10,
-  source_code_link: "https://github.com/Rao-Umair-Ali",
-},
+const projects = [
   {
-    name: "Web3 Uber",
-    description: `A Decentrilize car rental Application.`,
+    name: "Kinect",
+    description: `Attendance app for employees`,
     tags: [
       {
-        name: "nextJS",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "Tailwindcss",
+        name: "Dart",
         color: "blue-text-gradient",
       },
       {
-        name: "MapBox",
+        name: "Firebase",
         color: "green-text-gradient",
       },
       {
-        name: "Sanity.io",
+        name: "Provider",
         color: "green-text-gradient",
       },
-      {
-        name: "MetaMask",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "EtherJs",
-        color: "pink-text-gradient",
-      },
+    
     ],
-    image: project1,
-    source_code_link: "https://github.com/RaoSahab14127",
+     image: kinect,
+   source_code_link: "https://github.com/Rao-Umair-Ali",
   },
   {
-    name: "HMWheels",
-    description: `An decentrilized Car Selling Website with Google auth and metaMask.`,
+    name: "CornWall Islamic Foundation Web",
+    description: `Landing Website with LMS`,
     tags: [
       {
-        name: "ReactJs",
+        name: "Next.js",
         color: "blue-text-gradient",
       },
       {
-        name: "HardHat",
+        name: "Node.js",
         color: "blue-text-gradient",
       },
       {
-        name: "EtherJs",
+        name: "sanity.io",
         color: "green-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Vercel",
         color: "pink-text-gradient",
       },
-      {
-        name: "FireBase",
-        color: "pink-text-gradient",
-      },
+    
     ],
-    image: project2,
-    source_code_link: "https://github.com/RaoSahab14127",
+     image: cornwallp,
+   source_code_link: "https://github.com/Rao-Umair-Ali",
   },
   {
-    name: "Web3Chat App",
+    name: "Desi-Mart",
     description:
-      "A blockchain based chat application.",
+      "An Ecommerce app Basic",
     tags: [
       {
-        name: "reactjs",
+        name: "Flutter",
         color: "blue-text-gradient",
       },
       {
-        name: "HardHat",
+        name: "Dart",
         color: "green-text-gradient",
       },
       {
-        name: "SmartContracts",
+        name: "PropDrilling",
         color: "pink-text-gradient",
       },
     ],
-    image: Project3,
-    source_code_link: "https://github.com/RaoSahab14127",
+    image: desiApp,
+   source_code_link: "https://github.com/Rao-Umair-Ali",
   },
-  {
-    name: "Human Health  Care",
-    description:
-      "web application for patients to purchace Med and see their Medical record.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "WooCommerce Rest API",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Excel React Integration",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project4,
-    source_code_link: "https://github.com/RaoSahab14127",
-  },
-  {
-    name: "Wow Domain Name",
-    description:
-      "Domain name generator with respect to thier Wallet Address also generate their NFT and send that to their Wallet.",
-    tags: [
-      {
-        name: "BlockChain Name Service",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "Ether Js",
-        color: "green-text-gradient",
-      },
-      {
-        name: "NFT ERC721",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: project5,
-    source_code_link: "https://github.com/RaoSahab14127",
-  },
-  {
-    name: "Human Health Care ChatBot",
-    description:
-      "An Chat bot made on react for customer help.",
-    tags: [
-      {
-        name: "reactjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "JavaScript",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: Project6,
-    source_code_link: "https://github.com/RaoSahab14127",
-  },
+ 
 ];
 
 export { services, technologies, experiences, testimonials, projects };

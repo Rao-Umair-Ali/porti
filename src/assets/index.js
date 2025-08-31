@@ -43,9 +43,13 @@ import Project4 from "./HHCMed.png";
 import project5 from "./wow.png";
 import Project6 from "./chatbot.png";
 import Project10 from "./thirdJob.png";
+import kinect from "./kinect.png";
+import cornwallp from "./cornwallp.png";
+import desiApp from "./ps1.png";
 
 export {
   Project10,
+  cornwallp,kinect,desiApp,
   cornwall,
   mysql,
   dart,firebase,
